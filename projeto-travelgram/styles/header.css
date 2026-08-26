@@ -1,5 +1,5 @@
 header {
-  padding-block: 32px;
+  padding-block: 2rem;
   font: var(--text-md);
 }
 
@@ -12,7 +12,7 @@ header .container {
 #profile {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 2rem;
 }
 
 #profile > div {
@@ -36,12 +36,12 @@ header .container {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 0.5rem;
   width: 280px;
 }
 
 #info li {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
 }
