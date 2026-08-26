@@ -21,3 +21,15 @@ nav ul li:last-child img {
   /* border-radius: 50%; */
   /* object-fit: cover; */
 }
+
+@media (width <= 768px) {
+  nav{
+    padding-block: 1.25rem;
+    #primary-menu {
+      gap: 1rem;
+      & li:nth-child(2), li:nth-child(3) {
+        display: none;
+      }
+    }
+  }
+}
