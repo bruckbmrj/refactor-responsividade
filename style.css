@@ -1,0 +1,87 @@
+body {
+  --ff-helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: var(--ff-helvetica);
+  margin: 0;
+  padding: 0;
+  background-color: #2A2A3A;
+  color: #f0f0f0;
+}
+
+h1 {
+  font: 600 3.5rem/1.2 var(--ff-helvetica);
+  text-align: center;
+}
+h2 {
+  font: 600 2rem/1.2 var(--ff-helvetica);
+  text-align: center;
+}
+
+.project-list {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #2A2A3A;
+  }
+.project-item {
+  min-width: 230px;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  &:hover {
+    transform: translateY(-5px);
+    transition: all 0.5s ease;
+  }
+  & small {
+    display: block;
+  }
+}
+.travelgram {
+  background: #F5F5F5;
+  &:hover {
+    background-color: #cfcece;
+  }
+  & small {
+    color: #EF5F4C;
+  }
+}
+
+.portal {
+  background: #0F172A;
+  &:hover {
+    background-color: #070c16;
+  }
+  & small {
+    color: #60A5FA;
+  }
+}
+
+.matricula {
+  background: #FEE7D6;
+  &:hover {
+    background-color: #e7b896;
+  }
+  & small {
+    color: #2A2A3A;
+  }
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  .project-list {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5rem;
+  }
+}
