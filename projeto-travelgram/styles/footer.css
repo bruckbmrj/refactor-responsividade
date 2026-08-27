@@ -8,3 +8,17 @@ footer {
 footer span:first-child {
   margin-right: auto;
 }
+
+@media (width <= 768px) {
+  footer {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    text-align: center;
+    
+  }
+
+  footer span:first-child {
+    width: 100%;
+  }
+}
