@@ -4,4 +4,4 @@
 
 ### Travelgram
 ![alt text](assets/prints/travelgram_desktop.png)
-![alt text](assets/prints/travelgram-mobile.png)
+![alt text](<assets/prints/travelgram-mobile .png>)
