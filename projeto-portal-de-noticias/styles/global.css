@@ -13,12 +13,12 @@
   --text-color-secondary: #CBD5E1;
 
   --font-family: 'Archivo', sans-serif;
-  --h1: 800 24px/135% var(--font-family);
-  --h2: 800 16px/140% var(--font-family);
-  --h3: 800 14px/140% var(--font-family);
-  --text-span: 600 14px/145% var(--font-family);
-  --text: 400 16px/140% var(--font-family);
-  --text-sm: 400 14px/160% var(--font-family);
+  --h1: 800 1.5rem/135% var(--font-family);
+  --h2: 800 1rem/140% var(--font-family);
+  --h3: 800 0.875rem/140% var(--font-family);
+  --text-span: 600 0.875rem/145% var(--font-family);
+  --text: 400 1rem/140% var(--font-family);
+  --text-sm: 400 0.875rem/160% var(--font-family);
 }
 
 body {
@@ -45,14 +45,26 @@ img {
 
 .container {
   max-width: 1280px;
-  padding-inline: 32px;
+  padding-inline: 2rem;
   margin-inline: auto;
 }
 
+@media (width <= 768px) {
+  .container {
+    padding-inline: 1rem;
+  }
+}
+
+@media ((min-width: 769px) and (max-width: 1199px)) {
+  .container {
+    padding-inline: 1.5rem;
+  }
+}
+
 main {
-  margin-block: 40px;
-  row-gap: 80px;
-  column-gap: 32px;
+  margin-block: 2.5rem;
+  row-gap: 5rem;
+  column-gap: 2rem;
 
   grid-template-columns: 2fr 1.5fr;
 
@@ -62,14 +74,40 @@ main {
   "ai aside";
 }
 
+@media (width <= 768px) {
+  main {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+
+    grid-template-areas: 
+    "featured"
+    "weekly"
+    "ai"
+    "aside";
+  }
+}
+
+@media ((min-width: 769px) and (max-width: 1279px)) {
+  main {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+
+    grid-template-areas: 
+    "featured"
+    "weekly"
+    "ai"
+    "aside";
+  }
+}
+
 .content-tag {
   display: inline-block;
   background-color: var(--brand-color-dark);
-  padding: 4px 8px;
-  border-radius: 4px;
-  font: 500 10px/1.2 var(--font-family);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font: 500 0.625rem/1.2 var(--font-family);
   text-transform: uppercase;
   letter-spacing: 0.04em;
   color: var(--text-color-primary);
-  box-shadow: 0px 4px 16px rgba(2, 6, 23, 0.251);
+  box-shadow: 0px 0.25rem 1rem rgba(2, 6, 23, 0.251);
 }

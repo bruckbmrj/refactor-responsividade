@@ -1,10 +1,10 @@
 #primary {
-  padding-block: 20px;
+  padding-block: 1.25rem;
 
   div {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 0.5rem;
   }
 
   /* nesting css */
@@ -18,8 +18,41 @@
 }
 
 #secondary {
-  padding-block: 14px;
+  padding-block: 0.875rem;
   border: solid 1px var(--stroke-color);
   border-inline: none;
   justify-content: space-between;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 1rem;
+
+  /* Scrollbar discreto */
+  &::-webkit-scrollbar {
+    height: 0.5rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: var(--stroke-color);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--brand-color-light);
+    border-radius: 2px;
+  }
+
+  text-wrap-mode: nowrap;
+}
+
+@media (width <= 768px) {
+  #primary {
+    strong {
+      display: none;
+    }
+
+    div:nth-child(2) {
+      img {
+        width: 6.25rem;
+      }
+    }
+  }
 }
