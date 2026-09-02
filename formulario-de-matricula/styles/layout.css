@@ -65,5 +65,20 @@ aside {
   aside {
     order: 1;
     padding: 1.5rem;
+
+    & h2 {
+      display: none;
+    }
+    & p {
+      display: none;
+    }
+
+    & .aside-container {
+      margin: auto;
+      text-align: center;
+      & > img {
+          margin-top: 0.5rem;
+      }
+    }
   }
 }
