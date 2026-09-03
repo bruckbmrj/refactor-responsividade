@@ -48,3 +48,42 @@ aside {
     }
   }
 }
+
+@media (max-width: 980px) {
+  body {
+    overflow: auto;
+  }
+  #app {
+    grid-template-columns: 100%;
+    overflow: initial;
+  }
+  main {
+    overflow: initial;
+    order: 2;
+    padding: 1.5rem;
+
+    & .main-container {
+      margin-left: inherit;
+      margin: auto;
+    }
+  }
+  aside {
+    order: 1;
+    padding: 1.5rem;
+
+    & h2 {
+      display: none;
+    }
+    & p {
+      display: none;
+    }
+
+    & .aside-container {
+      margin: auto;
+      text-align: center;
+      & > img {
+          margin-top: 0.5rem;
+      }
+    }
+  }
+}
