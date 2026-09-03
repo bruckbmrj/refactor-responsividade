@@ -50,3 +50,9 @@ img {
 .flex-2 {
   flex: 2;
 }
+
+@media (max-width: 980px) {
+  .flex {
+    display: inherit;
+  }
+}

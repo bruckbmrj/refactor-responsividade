@@ -61,6 +61,11 @@ aside {
     overflow: initial;
     order: 2;
     padding: 1.5rem;
+
+    & .main-container {
+      margin-left: inherit;
+      margin: auto;
+    }
   }
   aside {
     order: 1;
